@@ -20,4 +20,4 @@
  mysqli_execute($stmt);
  echo "Submitted,Redirecting";
  header("Refresh:2;url=form.php");
-?>
+?> 
