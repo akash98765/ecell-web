@@ -64,4 +64,4 @@ if($_GET['id']=="4")
 }
 }
 mysqli_data_seek($result,0);
-?>
+?> 
