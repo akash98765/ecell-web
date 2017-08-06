@@ -4,6 +4,8 @@
 <link rel="stylesheet" type="text/css" href="design.css">
 </head>
 <body>
+<script src="use.js">
+</script>
 <span class="mandate">* for mandatory fields</span>
 <form action="submit.php" method="post" enctype="multipart/form-data">
 <fieldset>
@@ -60,8 +62,14 @@
 <br>
 <input type="file" name="fileToUpload" id="fileToUpload">
 </p>
+<p>
+<label for="h">DOB:</label>
+<input type="date" name="dob" required></input>
+<span class="mandate">*</span><br>
+</p>
 </fieldset>
-<input type="submit" name="submit" value="Submit"></input>
+<input type="submit" name="submit" value="submit" onmouseover="showtrack()" onmouseout="document.getElementById('track').innerHTML=''"></input>
 </form>
+<span id="track"></span>
 </body>
-</html> 
+</html>
